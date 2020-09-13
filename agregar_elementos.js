@@ -1,5 +1,5 @@
      const btnSave = document.getElementById('btn-save');
-     
+     const p_mostrar = document.getElementById('p_mostrar');
      //crea elementos 
      const addElement = () => {
           const name = document.getElementById('nombre').value;
@@ -11,8 +11,10 @@
           newElement.appendChild(newContent);
           newElement.setAttribute('align', 'center');
 
-          document.getElementById('p_mostrar').appendChild(newElement);
+          p_mostrar.appendChild(newElement);
           //console.log(newElement);   
      }
 
+     
+     //click y ejecuta addElement
      btnSave.addEventListener('click', addElement);
