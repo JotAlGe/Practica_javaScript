@@ -48,4 +48,9 @@ input[type=submit]{
      margin: 20px 0 20px 0;
      font-family: 'Grandstander', cursive;
      background-color: rgba(255, 105, 180, .5);
+     cursor: pointer;
+}
+input[type=submit]:hover {
+     background-color: rgba(255, 105, 180, .6);
+     color: white;
 }
