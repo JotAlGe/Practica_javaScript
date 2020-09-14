@@ -15,6 +15,10 @@
           //console.log(newElement);   
      }
 
-     
+     const clearInput = () => {
+          //const name = document.getElementById('nombre').value;
+          document.getElementById('nombre').value = '';
+     };
      //click y ejecuta addElement
      btnSave.addEventListener('click', addElement);
+     btnSave.addEventListener('click', clearInput);
