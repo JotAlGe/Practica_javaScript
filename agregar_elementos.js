@@ -16,7 +16,10 @@
      }
 
      const clearInput = () => {
+<<<<<<< HEAD
           //const name = document.getElementById('nombre').value;
+=======
+>>>>>>> master
           document.getElementById('nombre').value = '';
      };
      //click y ejecuta addElement
