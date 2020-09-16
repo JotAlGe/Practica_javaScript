@@ -5,6 +5,7 @@ body{
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
+     animation: move-back 20s linear alternate-reverse infinite;
 }
 div.container{
      width: 100%;
@@ -69,4 +70,14 @@ form #p_mostrar > p{
      border: 1px solid grey;
      color: white;
      user-select: none;
+}
+
+/* animation */
+@keyframes move-back {
+     0%{
+          background-position: top;
+     }
+     100%{
+          background-position: bottom;
+     }
 }
