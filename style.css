@@ -38,6 +38,7 @@ div.form form {
   height: 100%;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.7);
+  animation: aparecer 1s linear;
 }
 form fieldset {
   padding: 1.5em;
@@ -85,6 +86,24 @@ form #p_mostrar > p {
   user-select: none;
 }
 
+form #p_mostrar > p{
+     font-family: 'Grandstander', cursive;
+     font-size: 2em;
+     border: 1px solid grey;
+     color: white;
+     user-select: none;
+}
+/* efecto aparecer del formulario */
+@keyframes aparecer {
+  0%{
+    opacity: 0;
+    transform: scale(.5) rotate(0deg);
+  }
+  100%{
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
+}
 /* animation */
 @keyframes mov-back {
   0% {
@@ -96,7 +115,7 @@ form #p_mostrar > p {
 }
 @media screen and (min-width: 768px) {
   body{
-       animation: mov-back 20s;
+       animation: mov-back 20s ease-in;
   }
      @keyframes mov-back {
     0% {
@@ -107,13 +126,7 @@ form #p_mostrar > p {
     }
   }
 }
-form #p_mostrar > p{
-     font-family: 'Grandstander', cursive;
-     font-size: 2em;
-     border: 1px solid grey;
-     color: white;
-     user-select: none;
-}
+/* @media screen and (min-width: ) */
 
 /* animation */
 @keyframes move-back {
