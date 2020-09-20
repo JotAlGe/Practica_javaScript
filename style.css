@@ -1,8 +1,18 @@
 /* reset  */
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+=======
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+     background-image: url("img/anas-alshanti-feXpdV001o4-unsplash.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     animation: move-back 20s linear alternate-reverse infinite;
+>>>>>>> new_version
 }
 body {
   background-image: url("img/anas-alshanti-feXpdV001o4-unsplash.jpg");
@@ -76,6 +86,7 @@ form #p_mostrar > p {
   user-select: none;
 }
 
+<<<<<<< HEAD
 /* animation */
 @keyframes mov-back {
   0% {
@@ -98,3 +109,22 @@ form #p_mostrar > p {
     }
   }
 }
+=======
+form #p_mostrar > p{
+     font-family: 'Grandstander', cursive;
+     font-size: 2em;
+     border: 1px solid grey;
+     color: white;
+     user-select: none;
+}
+
+/* animation */
+@keyframes move-back {
+     0%{
+          background-position: top;
+     }
+     100%{
+          background-position: bottom;
+     }
+}
+>>>>>>> new_version
